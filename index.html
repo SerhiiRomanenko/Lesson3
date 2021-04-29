@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        var num = prompt('Введите количество лет!');
+        var ending = num[num.length - 1]; 
+        if(Number(num) !== Number(num)){
+            alert('Жаль, вы ввели не числовое значение!');
+        } else if (num < 0) {
+            alert('Вы ввели отрицательное число!')
+        } else if ( (ending >= 5 && ending <= 9) || ending == 0 || (num >= 11 && num <= 19) || (num >= 111 && num <= 120) ) {
+            alert('Соответственно ' + num + ' лет');
+        } else if (ending == 1) {
+            alert('Соответственно ' + num + ' год');
+        } else if (ending >= 2 && ending <= 4) {
+            alert('Соответственно ' + num + ' годa');
+        } else if (num == '') {
+            alert('Введите хоть что-то =)');
+        }
+
+
+    </script>
+
+</body>
+</html>
